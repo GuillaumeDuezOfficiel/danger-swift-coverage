@@ -7,27 +7,37 @@
 		<key>DangerDeps.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<key>DangerSwiftCoverage-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>DangerSwiftCoverage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
+		</dict>
+		<key>DangerSwiftCoverageTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>DangerSwiftLintTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>DangerSwiftlint.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 		<key>DangerXCodeSummary.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>2</integer>
 		</dict>
 		<key>SWXMLHashPlayground (Playground) 1.xcscheme</key>
 		<dict>
@@ -74,7 +84,7 @@
 		<key>danger-swift-coverage-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -94,7 +104,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DangerSwiftLintTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DangerSwiftlint</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DangerXCodeSummary</key>
 		<dict>
 			<key>primary</key>
 			<true/>
