@@ -8,7 +8,8 @@ let package = Package(
   products: [
     .library(name: "DangerSwiftCoverage", targets: ["DangerSwiftCoverage",
                                                     "DangerSwiftLint",
-                                                    "DangerXCodeSummary"])
+                                                    "DangerXCodeSummary"]),
+    .library(name: "DangerDeps", type: .dynamic, targets: ["DangerDependencies"])
   ],
   dependencies: [
     .package(url: "https://github.com/danger/swift.git", from: "3.18.1"),
