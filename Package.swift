@@ -7,7 +7,6 @@ let package = Package(
   name: "DangerSwiftCoverage",
   products: [
     .library(name: "DangerSwiftCoverage", targets: ["DangerSwiftCoverage",
-                                                    "DangerSwiftLint",
                                                     "DangerXCodeSummary"]),
     .library(name: "DangerDeps", type: .dynamic, targets: ["DangerDependencies"])
   ],
@@ -16,9 +15,6 @@ let package = Package(
     .package(url: "https://github.com/nicklockwood/SwiftFormat", from: "0.35.8")
   ],
   targets: [
-    .target(name: "DangerSwiftLint",
-            dependencies: [.product(name: "Danger", package: "swift")],
-            path: "Sources/DangerSwiftLint"),
     .target(name: "DangerSwiftCoverage",
             dependencies: [.product(name: "Danger", package: "swift")],
             path: "Sources/DangerSwiftCoverage"),
@@ -32,14 +28,14 @@ let package = Package(
             path: "Sources/DangerDependencies"),
     .testTarget(
       name: "DangerSwiftCoverageTests",
-      dependencies: ["DangerSwiftLint",
-                     "DangerDependencies",
+      dependencies: ["DangerDependencies",
                      "DangerSwiftCoverage",
                      "DangerXCodeSummary",
                      .product(name: "DangerFixtures", package: "swift")],
       path: "Tests/DangerSwiftCoverageTests",
       resources: [
-        .process("Json/")
+        .process("Json/"),
+        .process("DangerSwiftCoverageTests/XCResultTests/")
       ]
     ),
   ]
